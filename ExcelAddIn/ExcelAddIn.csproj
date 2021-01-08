@@ -201,6 +201,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Ribbon2.resx">
+      <DependentUpon>Ribbon2.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ExcelAddIn_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -209,6 +212,12 @@
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Ribbon2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ribbon2.Designer.cs">
+      <DependentUpon>Ribbon2.cs</DependentUpon>
     </Compile>
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
@@ -232,7 +241,7 @@
     <ManifestKeyFile>ExcelAddIn_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>2FB83E1115A834E7C45BCF849B527E32166FC77C</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>DF4990C37BF957B4F618F4F38FF02726A8ED2019</ManifestCertificateThumbprint>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml.Linq;
+using System.Windows;
 using Excel = Microsoft.Office.Interop.Excel;
 using Office = Microsoft.Office.Core;
 using Microsoft.Office.Tools.Excel;
@@ -44,6 +45,12 @@ namespace ExcelAddIn
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+        public Excel.Range GetActiveCell()
+        {
+
+            return (Excel.Range)Application.ActiveCell;
+
+        }
         private void InternalStartup()
         {
             this.Startup += new System.EventHandler(ThisAddIn_Startup);

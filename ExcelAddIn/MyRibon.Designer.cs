@@ -148,7 +148,7 @@ namespace ExcelAddIn
             this.dropDownColorRGB.Items.Add(ribbonDropDownItemImpl3);
             this.dropDownColorRGB.Items.Add(ribbonDropDownItemImpl4);
             this.dropDownColorRGB.Label = "Màu";
-            this.dropDownColorRGB.Name = "dropDown1";
+            this.dropDownColorRGB.Name = "dropDownColorRGB";
             // 
             // editSaturationPeak
             // 
